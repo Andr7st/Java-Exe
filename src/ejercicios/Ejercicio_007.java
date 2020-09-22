@@ -8,7 +8,7 @@ package ejercicios;
 
 import java.util.Scanner;
 
-class AdivinaNumeroV1{
+class AdivinarNumeroV1{
 
     //public AdivinaNumeroV1(){}
 

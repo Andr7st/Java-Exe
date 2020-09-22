@@ -13,3 +13,5 @@
 + [Adivina el número que estoy pensando:](https://github.com/Andr7st/Java-Exe/blob/master/src/ejercicios/Ejercicio_007.java) Consiste en introducir el número por consola hasta que lo adivine, revisa el código.
 
 ##### Andrés Segura - [Andr7st](https://github.com/Andr7st).
+
+<!-- Created by: Andrés Segura -->

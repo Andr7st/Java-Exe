@@ -8,7 +8,7 @@ package ejercicios;
 public class Main {
     public static void main(String[] args) {
 
-        AdivinaNumeroV1 ejercicio1 = new AdivinaNumeroV1();
+        AdivinarNumeroV1 ejercicio1 = new AdivinarNumeroV1();
         ejercicio1.Run();
 
     }
