@@ -1,5 +1,5 @@
 ### Ejercicios - Java
- Ejercicios de programacion en java.
+ Ejercicios de programación en java.
 
 ![logo](https://raw.github.com/Andr7st/index/master/img/Logo_java_x64.png?raw=true "java")
 ![logo](https://github.com/Andr7st/index/blob/master/img/Iogo_vscode_x48.png?raw=true "vscode")
