@@ -9,7 +9,7 @@
  * He usado el editor **visual studio code**, para evitar errores; se mantiene el archivo de configuraciones.
 
 #### Notas:
- * Si viste el video muestra, el código está en la rama [**Demo**](https://github.com/Andr7st/Java-Exercises/tree/Demo).
+ * Si viste el video [**muestra**](https://youtu.be/kSFQWHx0d4I), el código está en la rama [**Demo**](https://github.com/Andr7st/Java-Exercises/tree/Demo).
 
 #### Lista:
   Para mostrar todo presiona le tecla 'T'.
