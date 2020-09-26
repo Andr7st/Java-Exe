@@ -23,8 +23,6 @@ class Listar {
          * 
         */
         
-
-
         /* 
         print
         Scanner
