@@ -44,9 +44,9 @@ class Listar {
     ///> Proporcionar una lista de todos los titulos:
     public void titulos(){
         ////>
-        Ejercicio_001 e001 = new Ejercicio_001();
-        Ejercicio_002 e002 = new Ejercicio_002();
-        Ejercicio_003 e003 = new Ejercicio_003();
+        Ejercicio_01 e001 = new Ejercicio_01();
+        Ejercicio_02 e002 = new Ejercicio_02();
+        Ejercicio_03 e003 = new Ejercicio_03();
         
         String ejercicios = e001.titulo(); 
         ejercicios+= "\n" + e002.titulo();

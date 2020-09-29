@@ -2,7 +2,7 @@ package ejercicios;
 /**
  * @author Andrés Segura.
  */
-class Ejercicio_003 { 
+class Ejercicio_03 { 
 
     ///> INFORMACIÓN DEL EJERCICIO ACTUAL:
     private String ejercicio = "Ejercicio_003.java \t Imprimir.";
@@ -17,6 +17,11 @@ class Ejercicio_003 {
 
     ///> CÓDIGO DEL EJERCICIO ACTUAL:
     public void Run(){
+
+
+
+
+        
 
     }
 }

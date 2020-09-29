@@ -15,7 +15,7 @@ public class Main {
 
 
         Consola consola = new Consola();
-        Ejercicio_001 $e001 = new Ejercicio_001();
+        Ejercicio_01 $e001 = new Ejercicio_01();
         
         Scanner entrada = new Scanner(System.in);
         System.out.print("Ingresa tu seleccion: ");

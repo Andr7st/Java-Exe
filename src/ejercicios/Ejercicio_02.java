@@ -2,7 +2,7 @@ package ejercicios;
 /**
  * @author Andrés Segura.
  */
-class Ejercicio_002 { 
+class Ejercicio_02 { 
 
     ///> INFORMACIÓN DEL EJERCICIO ACTUAL:
     
