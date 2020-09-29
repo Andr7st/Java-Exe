@@ -16,7 +16,7 @@ También practicando **markdown, git**, y otros.
 
 #### Lista:
   Para mostrar todo presiona le tecla 'T'.
-+ [Adivina el número que estoy pensando:](https://github.com/Andr7st/Java-Exercises/blob/master/src/ejercicios/Ejercicio_007.java) Consiste en introducir el número por consola hasta que lo adivine, revisa el código.
++ [Adivina el número que estoy pensando:](https://github.com/Andr7st/Java-Exercises/blob/Demo/src/ejercicios/Ejercicio_007.java) Consiste en introducir el número por consola hasta que lo adivine, revisa el código.
 
 
 
