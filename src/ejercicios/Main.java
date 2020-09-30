@@ -1,17 +1,23 @@
 package ejercicios;
 
+import andr7st.Consola;
 import java.util.Scanner;
-
 /**
+ * @author Andr7st
  * @author Andrés Segura - Ejercicios Java. 
  */
 public class Main {
     public static void main(String[] args) {
 
+        Consola consola = new Consola(); /// Mi librería.
+
         Metodo metodo = new Metodo();   
 
         String clave; // Almacena lo escrito en la consola.
         int numClave; // lo escrito en consola en caso de ser un número.
+
+       
+        consola.ponerColorFrente("amarillo");
 
         /// Ingreso de datos.
         Scanner entrada = new Scanner(System.in);
