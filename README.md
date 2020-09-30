@@ -21,9 +21,9 @@ También practicando **markdown, git**, y otros.
 
 
 ##### Andrés Segura - [Andr7st](https://github.com/Andr7st).
-
- * He sido autodidacta leo varias fuentes, también estoy estudiando python y sql en un portal online.
  <!--
+ * He sido autodidacta leo varias fuentes, también estoy estudiando python y sql en un portal online.
+
  * con el paso del tiempo trataré de mejorar esta descripción. 
  -->
 
