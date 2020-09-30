@@ -2,46 +2,56 @@ package ejercicios;
 /**
  * @author Andrés Segura.
  * 
- *   EJERCICIO:
  * - Varias formas de imprimir datos en consola.
  * - Usos de secuencias de escape.
  */
 
 class Ejercicio_01 { 
-    ///> INFORMACIÓN DEL EJERCICIO ACTUAL:
-    /**
-     * - Todas las clases numeradas tendrán esto:
-     * 
-     * Agregar un titulo y una breve descripción de lo que hace lo que se programa 
-     * en cada clase para poder consultarlo desde el programa compilado.
-     */
 
-    ///> Poner el nombre del fichero java donde se encuentra el ejercicio, seguido del titulo
-    private String ejercicio = "Ejercicio_001.java \t Imprimiendo Datos";
-    private String descripcion = "";
-    public String titulo(){ return ejercicio; }
-
-    public String descripcion(){
-        descripcion = "Hacer esto..";
-        return descripcion;
+    //// Poner algo para idendificarlo desde la consola en caso de necesitarlo en el futuro.
+    private String Numero = "01"; /// Debe ser String.
+    private String Titulo = "Imprimir"; 
+    private String Descripcion;
+    ////
+    public String NUMERO(){return Numero;}
+    public String TITULO(){return Titulo;}
+    public String DESCRIPCION(){
+        Descripcion  = "";
+        Descripcion += "Imprimiendo con nueva linea y secuencias de escape.";
+        return Descripcion;
     }
-
-    public void detalles(){
-        descripcion  = "Consta de simplemente imprimir datos en consola," 
-        + "\nel objetivo de esto es revisar el código interno \nde programación.";
-        ///> Porque así Qué chiste.
-        String separador = "------------------------------------------------------";
-        System.out.println(separador);
-        System.out.printf("%s \t\t %s \n", "ARCHIVO", "TITULO");
-        System.out.println(ejercicio);
-        System.out.println("\nDESCRIPCION:");
-        System.out.println(descripcion);
-        System.out.println(separador + "\n");
-    }
-
 
     public void Run(){
-        ///> Imprimir:
+        /*
+        LAS SECUENCIAS DE ESCAPE:
+        char| \n - Nueva Linea
+        char| \t - Tabulador
+        char| \r - Retroceso de Carro.
+        char| \f - Comienzo de Pagina.
+        char| \b - Borrado a la Izquierda.
+        char| \\ - El carácter barra inversa.
+        char| \' - El carácter prima simple.
+        char| \" - El carácter prima doble.
+        */ 
+
+        /// Mostrar lista en consola.
+        System.out.println("LISTA DE SECUENCIAS DE ESCAPE:");
+        /// Mostrar una lista de secuencias de escape;
+        String secuenciasEscape = "";
+        secuenciasEscape += "\\n \tNueva Linea";
+        secuenciasEscape += "\n\\t \tTabulador";
+        secuenciasEscape += "\n\\r \tRetroceso de carro";
+        secuenciasEscape += "\n\\f \tComienzo de pagina";
+        secuenciasEscape += "\n\\b \tBorrado hacia la izquierda.";
+        secuenciasEscape += "\n\\\\ \tBarra inversa";
+        secuenciasEscape += "\n\\' \tComilla simple";
+        secuenciasEscape += "\n\\\" \tComilla doble";
+        /// print.
+        System.out.println(secuenciasEscape);
+        System.out.println();
+
+
+
         System.out.print("IMPRIMIR ");
         System.out.print("EN ");
         System.out.print("CONSOLA ");
@@ -49,16 +59,6 @@ class Ejercicio_01 {
         System.out.println(); // Salto vacío.
         System.out.println("¡Hola, que tal!");
         ///> CARÁCTERES DE ESCAPE:
-        /*
-        char caracter1 = '\n'; //> Nueva Linea
-        char caracter2 = '\t'; //> Tabulador
-        char caracter3 = '\r'; //> Retroceso de Carro.
-        char caracter4 = '\f'; //> Comienzo de Pagina.
-        char caracter5 = '\b'; //> Borrado a la Izquierda.
-        char caracter6 = '\\'; //> El carácter barra inversa.
-        char caracter7 = '\''; //> El carácter prima simple.
-        char caracter8 = '\"'; //> El carácter prima doble.
-        */ 
         System.out.println();
         System.out.println("USANDO SECUENCIAS DE ESCAPE:");
         System.out.println("Mandando a \nNueva linea.");

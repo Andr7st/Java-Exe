@@ -3,76 +3,88 @@ package ejercicios;
 import java.util.Scanner;
 
 /**
- * @author Andrés Segura - Ejercicios de programación java Java.
- * 
- * 
+ * @author Andrés Segura - Ejercicios Java. 
  */
-
 public class Main {
     public static void main(String[] args) {
 
-        Listar lista = new Listar();
+        Metodo metodo = new Metodo();   
 
+        String clave; // Almacena lo escrito en la consola.
+        int numClave; // lo escrito en consola en caso de ser un número.
 
-        Consola consola = new Consola();
-        Ejercicio_01 $e001 = new Ejercicio_01();
-        
+        /// Ingreso de datos.
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Ingresa tu seleccion: ");
-        String datoIngresado = entrada.nextLine();
+        System.out.print("Introduce numero de ejercicio: ");
+        clave = entrada.nextLine();
         entrada.close();
 
-        ////> En caso de ingresar una palabra clave "LISTAR", mostrar la lista
-        ////> el archivo que contiene el ejercicio, seguido del titulo que le he puesto.
-        ////> * Los que aparecen en la lista son los que están acomodados en el archivo de nombre 'Listar.java'
-        ////> * Despues de listar, se cerrará el programa.
-
-        if (datoIngresado.equalsIgnoreCase("listar")){
-            lista.titulos();
-            System.exit(0);
-        }
-
-        int casoEvaluar = 0; //> se inicializa para que el _switch no marque error.
-
-        //> Tratar de convertir el dato que se ha ingresado su valor numeríco.
+        /**
+         * PALABRAS CLAVE:
+         * - En caso de ingresar una palabra clave se ejecutará la instrucción definida
+         *   y luego se cerrará.
+         * 
+         * - Si se ingresa algún String no contemplado; avisa y cerrará.
+         */
         try {
-            casoEvaluar = Integer.parseInt(datoIngresado);
-        } catch (Exception e) {
-            ///System.out.println(e);
-            System.out.println("No valido.");
-            System.out.println(e + "\nDebes ingresar un número entero.");
-            //main(args);
-            //System.exit(0);
+            metodo.palabrasClave(clave);
+            //ingresasteNumero = false;
+        } catch (Exception e) {}
+
+        /**
+         * NUMERO:
+         * - En caso de ingresar un número, intenta ejecutarlo, de lo contrario se cierra.
+         */
+        if(metodo.metodoClave == false){ // <-- 
+            try {
+                numClave = Integer.parseInt(clave);
+                metodo.ejecutar(numClave);
+                
+            } catch (Exception e) {
+                System.out.println("Salir"); // main(args); // Habilitar al final
+            }
         }
 
-        switch (casoEvaluar) {
-            case 1:
-
-            consola.setColor("Yellow", "");
-            $e001.detalles();
-            consola.ClearColor();
-
-            $e001.Run(); //> Todos se ejecutarán desde el -.Run()
-
-                break;
-        
-            default:
-            System.out.println("Numero no comprendido.");
-                break;
-        }
+        System.gc();
+        System.exit(0);
     }
 }
 
+class Metodo{
+    //
+    public void ejecutar(int numEjercicio){
+        /// ejercicios validos.
+        Ejercicio_01 e01 = new Ejercicio_01();
+        Ejercicio_02 e02 = new Ejercicio_02();
+        ///
+        switch (numEjercicio) {
+            case 1: e01.Run(); break;
+            case 2: e02.Run(); break;
+
+        default:
+        System.out.println("Eleccion no listada.");
+        break;
+        }
+    }
 
 
+    // Mostrar algunas descripciones.
+    public void palabrasClave(String palabraClave){ // todavia sin usar.
 
+        Listar lista = new Listar();
 
+        if(palabraClave.equalsIgnoreCase("ayuda") || palabraClave.equalsIgnoreCase("help")){
+            // PONER UNA AYUDA
+            System.out.println("Ejercicio");
+            this.metodoClave = true;
+        }
 
+        else if (palabraClave.equalsIgnoreCase("listar")){
+            lista.titulos();
+            this.metodoClave = true;
+        }
+    }
 
-
-
-
-
-/* 
-
-*/
+    boolean metodoClave = false;
+    public boolean MetodoClave(){return metodoClave;}
+}

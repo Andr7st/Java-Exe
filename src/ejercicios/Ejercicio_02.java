@@ -4,26 +4,17 @@ package ejercicios;
  */
 class Ejercicio_02 { 
 
-    ///> INFORMACIÓN DEL EJERCICIO ACTUAL:
-    
-    /**
-     * - Todas las clases numeradas tendrán esto:
-     * 
-     * Agregar un titulo y una breve descripción de lo que hace lo que se programa 
-     * en cada clase para poder consultarlo desde el programa compilado.
-     */
-
-    private String ejercicio = "Ejercicio_002.java \t Imprimir.";
-    private String descripcion = "Descripcion";
-
-    public String titulo(){ return ejercicio; }
-
-    public String descripcion(){
-        descripcion = "Hacer esto..";
-        return descripcion;
+    private String Numero = "02"; /// Debe ser String.
+    private String Titulo = "Imprimir datos"; 
+    private String Descripcion;
+    ////
+    public String NUMERO(){return Numero;}
+    public String TITULO(){return Titulo;}
+    public String DESCRIPCION(){
+        Descripcion  = "";
+        Descripcion += "Imprimir";
+        return Descripcion;
     }
-
-    ///> CÓDIGO DEL EJERCICIO ACTUAL:
 
     public void Run(){
 
