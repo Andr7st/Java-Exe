@@ -1,5 +1,4 @@
 package ejercicios;
-
 import andr7st.Consola;
 import java.util.Scanner;
 /**
@@ -32,6 +31,7 @@ public class Main {
          * 
          * - Si se ingresa algún String no contemplado; avisa y cerrará.
          */
+
         try {
             metodo.palabrasClave(clave);
             //ingresasteNumero = false;
@@ -41,6 +41,7 @@ public class Main {
          * NUMERO:
          * - En caso de ingresar un número, intenta ejecutarlo, de lo contrario se cierra.
          */
+
         if(metodo.metodoClave == false){ // <-- 
             try {
                 numClave = Integer.parseInt(clave);
@@ -55,6 +56,9 @@ public class Main {
         System.exit(0);
     }
 }
+
+
+
 
 class Metodo{
     //
@@ -93,4 +97,20 @@ class Metodo{
 
     boolean metodoClave = false;
     public boolean MetodoClave(){return metodoClave;}
+
+
+
+
+
+
+    public void titulos(){
+
+        // Ejercicios
+        Ejercicio_01 e01 = new Ejercicio_01();
+        Ejercicio_02 e02 = new Ejercicio_02();
+        // Imprimir lista en consola.
+        System.out.printf("Ejercicio_%s.java \t %s \n", e01.NUMERO(), e01.TITULO());
+        System.out.printf("Ejercicio_%s.java \t %s \n", e02.NUMERO(), e02.TITULO());
+
+    }
 }

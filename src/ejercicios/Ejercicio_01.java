@@ -22,6 +22,9 @@ class Ejercicio_01 {
     }
 
     public void Run(){
+
+        String rayas = "--------------------------------";
+
         /*
         LAS SECUENCIAS DE ESCAPE:
         char| \n - Nueva Linea
@@ -35,8 +38,9 @@ class Ejercicio_01 {
         */ 
 
         /// Mostrar lista en consola.
-        System.out.println("LISTA DE SECUENCIAS DE ESCAPE:");
         /// Mostrar una lista de secuencias de escape;
+        System.out.println(rayas);
+        System.out.println("LISTA DE SECUENCIAS DE ESCAPE:");
         String secuenciasEscape = "";
         secuenciasEscape += "\\n \tNueva Linea";
         secuenciasEscape += "\n\\t \tTabulador";
@@ -48,18 +52,16 @@ class Ejercicio_01 {
         secuenciasEscape += "\n\\\" \tComilla doble";
         /// print.
         System.out.println(secuenciasEscape);
-        System.out.println();
-
-
-
-        System.out.print("IMPRIMIR ");
-        System.out.print("EN ");
-        System.out.print("CONSOLA ");
+        //System.out.print("IMPRIMIR ");
+        //System.out.print("EN ");
+        //System.out.print("CONSOLA ");
         ///> Imprimir con saltos:
-        System.out.println(); // Salto vacío.
-        System.out.println("¡Hola, que tal!");
+        //System.out.println(); // Salto vacío.
+        //System.out.println("¡Hola, que tal!");
+
+
         ///> CARÁCTERES DE ESCAPE:
-        System.out.println();
+        System.out.println(rayas);
         System.out.println("USANDO SECUENCIAS DE ESCAPE:");
         System.out.println("Mandando a \nNueva linea.");
         System.out.println("Haciendo una \tTAbulacion");
@@ -67,8 +69,10 @@ class Ejercicio_01 {
         System.out.println("Hola Mundo\b Hola Mundo"); //> Borra el caracter anterior, lo cambia por espacio.
         System.out.println("Barra invertida: \\Temp\\Archivo.txt"); //>
         System.out.println("Prima simple: I\'m learning how program.");
-        System.out.println();
+
+
         ///> IMPRESIÓN CON FORMATO:
+        System.out.println(rayas);
         System.out.println("IMPRESION CON FORMATO:");
         System.out.printf("Mi nombre es: %s%n", "Andres");
 
