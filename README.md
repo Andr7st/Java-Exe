@@ -1,7 +1,11 @@
 ### Ejercicios - Java
+
+Práctico y aprendo más sobre conseptos de programación de **Java, markdown y git**. 
+
+<!--
  Ejercicios de programación en java. Consta de practicar lo que he aprendido en java, mi intención es poner varios de los ejercicios que he hecho; haciendo una aplicación de consola desde donde mostrará una lista de ejercicios a ejecutar.
  
-También practicando **markdown, git**, y otros.
+También practicando **markdown, git**, y otros.-->
 
 ![logo](https://raw.github.com/Andr7st/index/master/img/Logo_java_x64.png?raw=true "java")
 ![logo](https://raw.github.com/Andr7st/index/master/img/Iogo_vscode_x48.png?raw=true "java")
