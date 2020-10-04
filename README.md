@@ -1,6 +1,6 @@
 ### Ejercicios - Java
 
-Práctico y aprendo más sobre conseptos de programación de **Java, markdown y git**. 
+Práctico y aprendo más sobre conseptos de programación con **Java, markdown y git**. 
 
 <!--
  Ejercicios de programación en java. Consta de practicar lo que he aprendido en java, mi intención es poner varios de los ejercicios que he hecho; haciendo una aplicación de consola desde donde mostrará una lista de ejercicios a ejecutar.
