@@ -8,7 +8,9 @@ Práctico y aprendo más sobre conseptos de programación de **Java, markdown y 
 También practicando **markdown, git**, y otros.-->
 
 ![logo](https://raw.github.com/Andr7st/index/master/img/Logo_java_x64.png?raw=true "java")
-![logo](https://raw.github.com/Andr7st/index/master/img/Iogo_vscode_x48.png?raw=true "java")
+![logo](https://raw.github.com/Andr7st/index/master/img/Logo_vscode_x64.png?raw=true "java")
+![logo](https://raw.github.com/Andr7st/index/master/img/Logo_git_x64.png?raw=true "java")
+![logo](https://raw.github.com/Andr7st/index/master/img/Logo_github_x64.png?raw=true "java")
 
  * El archivo **Main** es el único ejecutable, desde allí se llama lo que se ejecutará.
  * El código del programa se encuentra dentro del directorio **src**.
