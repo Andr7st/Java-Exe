@@ -1,25 +1,14 @@
 package ejercicios;
 /**
  * @author Andrés Segura.
- * 
- * - Varias formas de imprimir datos en consola.
- * - Usos de secuencias de escape.
+ * @author Andr7st
+ * - Practica de programación en Java.
  */
-
-class Ejercicio_01 { 
-
-    //// Poner algo para idendificarlo desde la consola en caso de necesitarlo en el futuro.
-    private String Numero = "01"; /// Debe ser String.
-    private String Titulo = "Imprimir"; 
-    private String Descripcion;
-    ////
-    public String NUMERO(){return Numero;}
-    public String TITULO(){return Titulo;}
-    public String DESCRIPCION(){
-        Descripcion  = "";
-        Descripcion += "Imprimiendo con nueva linea y secuencias de escape.";
-        return Descripcion;
-    }
+public class Ejercicio_01 {
+    /**
+     * - Imprimiendo datos en consola.
+     * - Uso de secuencias de escape.
+     */
 
     public void Run(){
 
@@ -37,11 +26,11 @@ class Ejercicio_01 {
         char| \" - El carácter prima doble.
         */ 
 
-        /// Mostrar lista en consola.
-        /// Mostrar una lista de secuencias de escape;
+        //// Mostrando la lista de secuencias de escape en la consola.
         System.out.println(rayas);
-        System.out.println("LISTA DE SECUENCIAS DE ESCAPE:");
+        System.out.println("LISTA DE SECUENCIAS DE ESCAPE:\n");
         String secuenciasEscape = "";
+
         secuenciasEscape += "\\n \tNueva Linea";
         secuenciasEscape += "\n\\t \tTabulador";
         secuenciasEscape += "\n\\r \tRetroceso de carro";
@@ -50,7 +39,7 @@ class Ejercicio_01 {
         secuenciasEscape += "\n\\\\ \tBarra inversa";
         secuenciasEscape += "\n\\' \tComilla simple";
         secuenciasEscape += "\n\\\" \tComilla doble";
-        /// print.
+        
         System.out.println(secuenciasEscape);
         //System.out.print("IMPRIMIR ");
         //System.out.print("EN ");
@@ -62,7 +51,7 @@ class Ejercicio_01 {
 
         ///> CARÁCTERES DE ESCAPE:
         System.out.println(rayas);
-        System.out.println("USANDO SECUENCIAS DE ESCAPE:");
+        System.out.println("USANDO SECUENCIAS DE ESCAPE:\n");
         System.out.println("Mandando a \nNueva linea.");
         System.out.println("Haciendo una \tTAbulacion");
         System.out.println("Haciendo un \rRetrocediendo."); //> No apareceá el contenido antes del retroceso.
@@ -73,8 +62,10 @@ class Ejercicio_01 {
 
         ///> IMPRESIÓN CON FORMATO:
         System.out.println(rayas);
-        System.out.println("IMPRESION CON FORMATO:");
+        System.out.println("IMPRESION CON FORMATO:\n");
         System.out.printf("Mi nombre es: %s%n", "Andres");
+        System.out.println();
+
 
     }
 }

@@ -1,24 +1,36 @@
 package ejercicios;
 /**
  * @author Andrés Segura.
+ * @author Andr7st
+ * - Practicas de programación en Java.
  */
-class Ejercicio_03 { 
+import java.util.Scanner;
 
-    private String Numero = "02"; /// Debe ser String.
-    private String Titulo = "Imprimir datos"; 
-    private String Descripcion;
-    ////
-    public String NUMERO(){return Numero;}
-    public String TITULO(){return Titulo;}
-    public String DESCRIPCION(){
-        Descripcion  = "";
-        Descripcion += "Imprimir";
-        return Descripcion;
-    }
-
-    ///> CÓDIGO DEL EJERCICIO ACTUAL:
+public class Ejercicio_03 {
+    // 'if'
     public void Run(){
 
+        Scanner entrada = new Scanner(System.in); // No cerrar - don't close. 
 
+        int num1, num2;
+
+        System.out.println("Introdcir dos números Int y devolver el mayor: ");
+
+        System.out.print("Introduce valor 1: ");
+        num1 = Integer.parseInt(entrada.nextLine());
+        System.out.print("Introduce valor 2: ");
+        num2 = Integer.parseInt(entrada.nextLine());
+        
+        // Uso
+        if(num1 > num2){
+            System.out.println("El " + num1 + " es el mayor.");
+        }
+        else if(num1 < num2){
+            System.out.println("El " + num2 + " es el mayor.");
+        }
+        else{
+            System.out.println(num1 + " = " + num2 + ", son iguales.");
+        }
+        System.out.println();
     }
 }
